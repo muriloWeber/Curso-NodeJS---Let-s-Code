@@ -22,9 +22,9 @@ class Agenda {
 
     remover (info) {
         if(this.contatos.findIndex(byName(info)) > -1) {
-            return this.contatos.splice(this.contatos.findIndex(byName(info)), 1);
+            this.contatos.splice(this.contatos.findIndex(byName(info)), 1);
         }else if (this.contatos.findIndex(byId(info)) > -1) {
-            return this.contatos.splice(this.contatos.findIndex(byId(info)), 1);
+            this.contatos.splice(this.contatos.findIndex(byId(info)), 1);
         } else {
             throw "Use o nome ou o Id do contato para removê-lo"
         }        
@@ -32,18 +32,18 @@ class Agenda {
 
     buscar (info) {
         if(this.contatos.findIndex(byName(info)) > -1) {
-            let index = this.contatos.findIndex(byName(nome));
-            return console.log(this.contatos[index]);
+            let index = this.contatos.findIndex(byName(info));
+            console.log(this.contatos[index]);
         }else if (this.contatos.findIndex(byId(info)) > -1) {
             let index = this.contatos.findIndex(byId(info));
-            return console.log(this.contatos[index]);
+            console.log(this.contatos[index]);
         } else {
             throw "Use o nome ou o Id do contato para buscá-lo"
         }    
     }
 
     listar () {
-        return console.log(this.contatos);
+        console.log(this.contatos);
     }
 }
 
@@ -55,4 +55,4 @@ agenda.incluir("Mathew", "@yahoo", 983838383);
 agenda.remover("Mary");
 agenda.listar();
 
-agenda.buscar(1000);
+agenda.buscar("Joseph");
