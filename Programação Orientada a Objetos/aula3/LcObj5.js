@@ -18,7 +18,7 @@ class Televisor {
         this.canaisProibidos = [70];
         this.password = password.toString();
         this.canaisBlok = [{canal: 25, hrInicio: 17, hrFim: 18}];
-        this.volume = 99;
+        this.volume = 100;
     }
 }
 
@@ -53,7 +53,7 @@ class ControleRemoto {
         } else if (this.televisor.canaisBlok.findIndex(byCanal(canal)) > -1) {
             let indiceCanalBlok = this.televisor.canaisBlok.findIndex(byCanal(canal));
             if(this.televisor.canaisBlok[indiceCanalBlok].hrFim < this.televisor.canaisBlok[indiceCanalBlok].hrInicio) {
-                if(horaAtual >= this.televisor.canaisBlok[indiceCanalBlok].hrInicio) {
+                if(horaAtual >= this.televisor.canaisBlok[indiceCanalBlok].hrInicio || horaAtual < this.televisor.canaisBlok[indiceCanalBlok].hrFim) {
                     console.log(`Canal está bloqueado das ${this.televisor.canaisBlok[indiceCanalBlok].hrInicio}hs às ${this.televisor.canaisBlok[indiceCanalBlok].hrFim}hs.`);
                 }
             } else if (horaAtual >= this.televisor.canaisBlok[indiceCanalBlok].hrInicio && horaAtual < this.televisor.canaisBlok[indiceCanalBlok].hrFim) {
@@ -63,10 +63,15 @@ class ControleRemoto {
             }
 
         } else {
-           (this.televisor.listaCanais.includes(canal)) ? this.televisor.canalAtual = canal : console.log("O canal que você deseja trocar ainda não está sintonizado neste televisor.");
+           if(this.televisor.listaCanais.includes(canal)) {
+               this.televisor.canalAtual = canal
+            } else {
+                let userInput = prompt("O canal que você deseja trocar ainda não está sintonizado neste televisor. Deseja sintonizar agora? S/N: ").toString();
+                if(userInput === "S") this.televisor.listaCanais.push(canal);
+                else if(userInput === "N") console.log("Canal não sintonizado");
+            }  
         }
     }
-
 
     aumentarVolume () {
         if((this.televisor.volume + 1) > 100) throw "Volume deve estar entre 0 e 100."
@@ -97,11 +102,11 @@ const tv = new Televisor ("LG", "4K", 123);
 const control = new ControleRemoto(tv);
 
 control.sintonizar(10);
-control.trocarCanal(25);
+control.trocarCanal(5);
 control.incluirBlok(10, 11, 15);
 console.log(tv);
 control.editarBlok(10, 12, 16);
 control.editarBlok(11, 0, 6);
-control.aumentarVolume();
+control.diminuirVolume();
 
 console.log(tv);
