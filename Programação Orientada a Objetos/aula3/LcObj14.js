@@ -21,29 +21,6 @@ class ContaCorrente {
         }
     }
     
-    depositar (valor) {return this.saldo += valor}
-
-    sacar (valor) {
-        (valor <= this.saldo) ? this.saldo -= valor : console.log(`Saldo insuficiente. Saldo atual: R$ ${this.saldo}`)
-    }
-
-    transferir (valor, contaDestino) {
-        if(valor <= this.saldo) {
-            this.saldo -= valor;
-            contaDestino.saldo += valor; 
-        } else {
-            console.log(`Saldo insuficiente. Saldo atual: R$ ${this.saldo}`)
-        }
-    }
-}
-
-class ContaVip extends ContaCorrente {
-    constructor (cliente, saldo, chequeEspecial) {
-        super (cliente, saldo);
-        this.chequeEspecial = chequeEspecial;
-        this.chequeEspUsado = 0;
-    }
-
     depositar (valor) {
         if(this.chequeEspUsado > 0) {
             this.saldo += (valor - this.chequeEspUsado);
@@ -69,8 +46,12 @@ class ContaVip extends ContaCorrente {
             this.saldo -= valor;
             if(contaDestino instanceof ContaVip) {
                 if(contaDestino.chequeEspUsado > 0) {
+                    if(valor <= contaDestino.chequeEspUsado) {
+                        contaDestino.chequeEspUsado -= valor;
+                    } else {
                     contaDestino.saldo += (valor - contaDestino.chequeEspUsado);
                     contaDestino.chequeEspUsado -= (valor - contaDestino.saldo);
+                    }
                 } else {
                     contaDestino.saldo += valor;
                 }
@@ -88,6 +69,14 @@ class ContaVip extends ContaCorrente {
     }
 }
 
+class ContaVip extends ContaCorrente {
+    constructor (cliente, saldo, chequeEspecial) {
+        super (cliente, saldo);
+        this.chequeEspecial = chequeEspecial;
+        this.chequeEspUsado = 0;
+    }
+}
+
 const cliente1 = new Cliente ("Murilo", 35, "@gmail.com");
 const cliente2 = new Cliente ("maria", 29, "@yahoo");
 const cliente3 = new Cliente ("Rafa", 30, "@hotmail.com");
@@ -96,7 +85,11 @@ const contaVip1 = new ContaVip (cliente1, 10000, 1000);
 const contaVip2 = new ContaVip (cliente3, 0, 2000);
 const conta1 = new ContaCorrente (cliente2, 1000);
 
+contaVip1.sacar(250);
 contaVip1.transferir(10500, conta1);
+conta1.transferir(100,contaVip1);
+conta1.sacar(100);
+conta1.depositar(50);
 
 
 console.log(contaVip1);
