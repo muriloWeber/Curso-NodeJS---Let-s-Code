@@ -21,7 +21,7 @@ class Quadrado extends Retangulo {
         super (lado_a, lado_b);
     }
     
-    // area () {return this.lado_a * this.lado_b}
+    area () {return this.lado_a * this.lado_b}
 
     imprimir (area) {return console.log(JSON.stringify(`A área do quadrado é de ${area} m²`))}
 
