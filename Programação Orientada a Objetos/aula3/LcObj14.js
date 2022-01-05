@@ -60,7 +60,7 @@ class ContaVip extends ContaCorrente {
             this.chequeEspUsado += (valor - this.saldo);
             this.saldo -= (valor - this.chequeEspUsado);
         } else {
-            console.log(`Saldo combinado insuficiente. Saldo atual: R$ ${this.saldo} e Limite Cheque Especial disponível R$ ${this.chequeEspecial - this.chequeEspUsado}`)
+            console.log(`Saldo combinado insuficiente. Saldo atual: R$ ${this.saldo} - Limite Cheque Especial disponível R$ ${this.chequeEspecial - this.chequeEspUsado}`)
         }
     }
 
@@ -72,7 +72,7 @@ class ContaVip extends ContaCorrente {
                     contaDestino.saldo += (valor - contaDestino.chequeEspUsado);
                     contaDestino.chequeEspUsado -= (valor - contaDestino.saldo);
                 } else {
-                contaDestino.saldo += valor;
+                    contaDestino.saldo += valor;
                 }
             } else {
                 contaDestino.saldo += valor;
@@ -80,6 +80,7 @@ class ContaVip extends ContaCorrente {
         } else if (valor > this.saldo && (valor - this.saldo) <= this.chequeEspecial) {
             this.chequeEspUsado += (valor - this.saldo);
             this.saldo -= (valor - this.chequeEspUsado);
+            contaDestino.saldo += valor;
         } else {
             console.log(`Saldo combinado insuficiente. Saldo atual: R$ ${this.saldo} - Limite Cheque Especial disponível: R$ ${this.chequeEspecial - this.chequeEspUsado}`)
         }
@@ -89,12 +90,16 @@ class ContaVip extends ContaCorrente {
 
 const cliente1 = new Cliente ("Murilo", 35, "@gmail.com");
 const cliente2 = new Cliente ("maria", 29, "@yahoo");
+const cliente3 = new Cliente ("Rafa", 30, "@hotmail.com");
 
 const contaVip1 = new ContaVip (cliente1, 10000, 1000);
-const conta1 = new ContaCorrente (cliente2, 1000, 100);
+const contaVip2 = new ContaVip (cliente3, 0, 2000);
+const conta1 = new ContaCorrente (cliente2, 1000);
 
 contaVip1.transferir(10500, conta1);
 
-console.log(conta1);
+
 console.log(contaVip1);
+console.log(contaVip2);
+console.log(conta1);
 
