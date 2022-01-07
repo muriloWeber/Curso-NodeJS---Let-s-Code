@@ -6,6 +6,6 @@ Use a função reduce para transformar um vetor numérico em uma string com todo
 
 const vetor = [1, 2, 3, 4];
 
-const unique = vetor.reduce((a, b) => a + JSON.stringify(b));
+const unique = vetor.reduce((a, b) => a + b.toString());
 
 console.log(unique);
