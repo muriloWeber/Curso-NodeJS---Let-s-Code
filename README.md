@@ -4,5 +4,4 @@ Curso de NodeJS ministrado pela parceira Let's Code. Fiz este repositório para 
 
 Até o momento já passei pelos módulos abaixo listados:
 
-Módulo Lógica de Progaramação 
-Módulo Programação Orientada a Objetos
+Módulo Lógica de Progaramação e Módulo Programação Orientada a Objetos
