@@ -12,9 +12,9 @@ for(i = 0; i < 15; i++) {
     alturas.push(parseFloat(prompt(`Digite sua altura (metros): `)));
 }
 
-const menorAltura = Math.max(alturas);
+const menorAltura = Math.max(...alturas);
 
-const maiorAltura = Math.min(alturas);
+const maiorAltura = Math.min(...alturas);
 
 console.log(menorAltura);
 console.log(maiorAltura);
