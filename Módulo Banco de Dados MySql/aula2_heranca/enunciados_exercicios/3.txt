@@ -1,0 +1,7 @@
+Uma companhia é organizada em departamentos. Cada departamento tem nome e número únicos, e um empregado em particular que gerencia o departamento. Manter a data de início de quando esse empregado começou a gerenciar o departamento. Um departamento pode estar em várias localidades.
+
+Um departamento controla um número de projetos, cada um dos quais tem nome e número únicos e uma única localidade.
+
+Para cada empregado armazenar seu nome, CPF, endereço, salário, sexo e data de nascimento. Um empregado é associado a um departamento mas pode trabalhar em vários projetos, não necessariamente controlados pelo mesmo departamento. Manter o número de horas trabalhadas semanais que um empregado trabalha em cada projeto, além do supervisor direto de cada empregado.
+
+Manter os dependentes de cada empregado. Para cada dependente armazenar nome, sexo, data de nascimento e parentesco com o empregado.

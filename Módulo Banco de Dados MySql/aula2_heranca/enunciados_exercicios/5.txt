@@ -1,0 +1,11 @@
+Uma locadora de vídeo possui um acervo de fitas cujo empréstimo deve ser controlado.
+
+Cada fita possui um número e data de compra. Para cada filme é necessário saber seu título e gênero (drama, comédia, aventura, etc.). Cada filme recebe um identificador próprio. Para cada filme deve-se saber o estúdio que o produziu, além do ano de produção, país de origem, idioma e tempo de duração. Para cada fita deve-se saber que filme ela contém. Para cada filme há pelo menos uma fita, e cada fita possui somente um filme.
+
+Os clientes podem desejar encontrar os filmes estrelados pelo seu ator predileto. Por isso, é necessário manter a informação dos atores que estrelam cada filme. Nem todo filme possui estrelas. Para cada ator os clientes às vezes desejam saber o nome real (além do nome artístico), bem como a data e país de nascimento.
+
+A locadora possui clientes cadastrados. Para cada cliente é necessário saber seu nome, telefone e endereço. Além disso, cada cliente recebe um  número de associado.
+
+A locadora possui os funcionários também cadastrados com nome, matrícula, endereço, telefone e salário. Os funcionários podem ser administrativos ou de atendimento. Cada funcionário administrativo possui um código que os identifica junto ao banco para movimentação. Somente os funcionários de atendimento podem atender os clientes.
+
+Um cliente pode alugar várias fitas ao mesmo tempo. Para cada aluguel de fita realizado a um cliente deve-se saber qual a data do aluguel e o funcionário responsável.

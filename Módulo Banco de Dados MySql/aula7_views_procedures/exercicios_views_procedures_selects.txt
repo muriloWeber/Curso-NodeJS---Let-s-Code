@@ -1,0 +1,11 @@
+* Listagem dos Clientes e quantidade de pedidos de compras
+* Crie uma VIEW que retorne o vendedor que mais realizou atendimentos a clientes de manutenção e valor total
+* Listagem do gerente de cada departamento
+* Crie uma procedure que me permita realizar um filtro de nome no estoquista que atendeu mais solicitações
+* Qual foi o produto mais solicitado estoquistas e sua quantidade
+* Tecnico que solicitou mais produtos
+* Tecnicos que atenderam mais ordem de serviços
+* Tempo médio gasto dos tecnicos durante as ordens de serviço
+* Mês que teve maior ocorrencia de solicitações de suporte online
+* Logista que realizou o maior número de atendimentos pedidos de compras e pedidos de manutenção
+* Listagem dos tipos de suporte online e total de ocorrência

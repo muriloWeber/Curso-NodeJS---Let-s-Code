@@ -1,0 +1,11 @@
+O curso de Sistemas de Informação realiza anualmente a Semana de Sistemas de Informação, principal evento do curso. Para tanto, você foi escolhido para projetar um banco de dados que será utilizado para armazenar todos os dados relativos ao evento, seguindo os requisitos descritos a seguir.
+
+O curso possui vários alunos matriculados. Para cada aluno devem ser mantidos matrícula, nome e e-mail.
+
+Durante o evento são realizadas uma série de atividades, que possuem código e nome. Essas atividades podem ser caracterizadas em palestras, mini-cursos e visitas técnicas.
+
+Cada palestra possui o nome do palestrante e a hora de início.
+
+Para os mini-cursos devem ser armazenados o nome do instrutor, a data de início e a data de término, além do laboratório onde se realiza. A visita técnica possui o nome da organização visitada, o nome do professor responsável pela visita, data de sua realização, além da hora de início e hora de término.
+
+Durante o período de inscrições no evento cada aluno pode se inscrever em uma ou mais atividades, determinando a prioridade para cada uma. O aluno pode ser selecionado para uma das atividades em que se inscreveu. Deve ser armazenado também no banco de dados para qual atividade determinado aluno foi selecionado.

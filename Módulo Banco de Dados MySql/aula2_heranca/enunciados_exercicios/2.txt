@@ -1,0 +1,11 @@
+Para cada estudante é armazenado nome, matrícula, endereço, telefone, data de nascimento e sexo. Algumas aplicações utilizam cidade, estado e CEP do estudante separadamente, além do seu último nome. A matrícula de cada estudante deve ser única.
+
+Cada departamento possui nome e número únicos e um telefone.
+
+Cada disciplina tem um nome, descrição, número único, carga horária semanal e departamento que a oferece.
+
+Cada professor tem uma matrícula única, nome, título, endereço, telefone e é associado a um departamento.
+
+O professor pode lecionar várias disciplinas, desde que oferecidas pelo departamento em que trabalha.
+
+Cada aluno pode estar matriculado em várias disciplinas. Manter a situação do aluno na disciplina (aprovado, reprovado, matriculado), além de sua nota e frequência.

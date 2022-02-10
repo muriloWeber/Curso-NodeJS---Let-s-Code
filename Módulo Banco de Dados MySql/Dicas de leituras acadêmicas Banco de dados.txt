@@ -1,0 +1,5 @@
+ELMASRI, Ramez; NAVATHE, Sham. Sistemas de banco de dados. São Paulo: Pearson Addison Wesley, 2011;
+
+HEUSER, Carlos Alberto. Projeto de banco de dados. 5. ed. Porto Alegre: Sagra Luzzatto, 2004.
+
+rutyelle.santos@hotmail.com

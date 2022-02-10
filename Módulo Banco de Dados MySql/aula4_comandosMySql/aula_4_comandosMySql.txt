@@ -1,0 +1,29 @@
+CREATE DATABASE - nome do projeto
+
+DAFAULT CHARACTER SET utf8
+
+DAFAULT COLLATE utf8_general_ci; (trabalhar com manipulação de dados eu quero esse padrão - "agrupamento de dados" - pra não ficar louco caso use caracter especial)
+
+"Criação de tabelas"
+
+CREATE TABLE TurmaAlunos (
+	Id INT NOT NULL,
+    
+    Aluno INT NOT NULL,
+    
+    CONSTRAINT PK_TurmaAlunos PRIMARY KEY (Id),
+    CONSTRAINT FK_TurmaAlunos_Aluno FOREIGN KEY (Aluno) REFERENCES Alunos(Id)
+);
+
+"Alteração de tabelas"
+
+ALTER TABLE Alunos MODIFY CPF INTEGER; (se tiver dado na coluna vai dar erro)
+
+ALTER TABLE TurmaAlunos ADD Nota DECIMAL(4, 2) NOT NULL;
+
+ALTER TABLE TurmaAlunos
+	ADD Turma INT NOT NULL,
+    	ADD CONSTRAINT FK_TurmaAlunos_Turma FOREIGN KEY (Turma) REFERENCES Turmas(Id);
+
+-- DROP TABLE Alunos;
+-- DROP DATABASE Aula;

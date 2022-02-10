@@ -1,0 +1,11 @@
+Em uma clínica odontológica trabalham diversos dentistas. Cada dentista possui um código junto ao CRO (Conselho Regional de Odontologia) e outro junto ao CFO (Conselho Federal de Odontologia), além de nome, endereço, especialidade, telefone e e-mail. Um dentista pode ter mais de uma especialidade, telefone ou e-mail.
+
+Cada dentista possui uma secretária, que possui nome, endereço, telefone e salário.
+
+A clínica possui uma série de pacientes que devem ser cadastrados. Cada paciente possui uma matrícula que o identifica, além de um nome, endereço, telefone, e-mail e data de nascimento. Cada paciente possui um único telefone e único e-mail.
+
+Os dentistas podem executar uma série de procedimentos odontológicos diferentes e pré-definidos (extração, restauração, implante, colocação de aparelho ortodôntico, etc.). Cada procedimento possui código, nome e descrição.
+
+Ao atender um paciente, um dentista pode executar um ou mais procedimentos. Cada atendimento realizado deve ser configurado como atendimento preventivo ou corretivo, além de possuir data e hora.
+
+Para cada procedimento executado em um atendimento pode ser feita uma observação.

@@ -1,0 +1,13 @@
+Um proprietário rural deseja informatizar as atividades (agricultura e pecuária) de suas fazendas. Para isso solicitou o desenvolvimento de um sistema que permita o gerenciamento mais eficiente dessas fazendas.
+
+Cada fazenda possui nome, cidade onde se localiza e um código junto ao Ministério da Agricultura. Além disso, as fazendas são divididas em lotes para facilitar a administração da produção agrícola. Cada lote de uma fazenda é identificado por um número sequencial, além de sua área.
+
+A produção agrícola é anual. Portanto, em cada lote de uma fazenda é produzido um produto (cana-de-açúcar, café, arroz, etc.) por ano. Para cada produto de um respectivo lote deve-se armazenar qual foi a produção anual em toneladas, além da data da colheita. Cada produto agrícola possui também um nome e a melhor época de plantio (que é uma característica de cada produto).
+
+As fazendas também trabalham com pecuária bovina. Para cada animal devese armazenar um código que o identifica, cor, data de nascimento, forma de aquisição e a fazenda onde se localiza.
+
+As fazendas possuem funcionários, que possuem CPF, nome, endereço e telefone. Dentre os funcionários existem, além de outros, engenheiros agrônomos e médicos veterinários.
+
+Cada engenheiro agrônomo possui um código junto ao CREA e é responsável anualmente pela produção agrícola de um ou mais lotes das fazendas.
+
+Cada médico veterinário possui um código junto ao CRMV e é responsável pela vacinação dos animais de uma ou mais fazendas. Para cada funcionário, além dos engenheiros agrônomos e médicos veterinários, devese saber em que  fazenda ele trabalha.

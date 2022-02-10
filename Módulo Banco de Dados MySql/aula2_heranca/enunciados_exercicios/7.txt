@@ -1,0 +1,11 @@
+Uma oficina automotiva possui vários clientes. Cada cliente possui CPF, nome, endereço e telefone.
+
+A oficina possui um estoque com uma variedade de produtos que podem ser utilizados nos serviços prestados. Cada produto possui código (único), nome e descrição. Para cada produto, devem ser mantidas também a quantidade atual e a quantidade mínima permitida em estoque.
+
+A oficina possui uma série de fornecedores, responsáveis por lhe vender os produtos. Um mesmo produto pode ser fornecido por vários fornecedores diferentes. Cada fornecedor possui um CNPJ, nome, endereço e telefone.
+
+A oficina possui uma série de serviços que são oferecidos aos clientes. Cada serviço possui um código, descrição e tempo médio de execução. Um serviço prestado a um cliente pode ou não utilizar produtos do estoque da oficina. Quando isso acontece, deve ser mantida a quantidade do produto que foi utilizado no serviço, além do tempo gasto na sua execução.
+
+Os funcionários da oficina possuem uma matrícula que os identifica, nome, endereço e salário, além do resultado acumulado mês a mês com os serviços prestados. Quando um funcionário atende um cliente deve ser mantida a data e a hora do atendimento. Cada atendimento pode resultar ou não na prestação de um serviço.
+
+Um serviço pode ser categorizado em serviço de manutenção preventiva ou serviço de manutenção corretiva. Em caso de manutenção preventiva, devem ser mantidas a data, a hora e a data da próxima manutenção. Já na manutenção corretiva, devem ser mantidas a data, a hora e uma descrição do motivo que levou à necessidade do serviço.

@@ -1,0 +1,5 @@
+aula de banco dia 13/01
+
+herança - especialização
+
+otimização - evitar tabelão com campos null - 

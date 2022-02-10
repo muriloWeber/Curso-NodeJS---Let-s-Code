@@ -1,0 +1,9 @@
+Sabe-se que o processo eleitoral brasileiro é todo informatizado. Para isso, os dados relativos às eleições devem ser armazenados em um banco de dados, que você foi escolhido para projetar. Esse banco de dados deve armazenar dados relativos a:
+
+1. partidos políticos (número e nome);
+2. candidatos (número e nome);
+3. cargos em disputa (código e descrição do cargo);
+4. eleitores (número do título eleitoral, nome do eleitor, nome da mãe e
+data de nascimento).
+
+O banco de dados projetado deve ser capaz de armazenar o resultado das eleições. Lembre-se de que o voto é secreto. Portanto, não se deve armazenar o candidato em que cada eleitor votou.

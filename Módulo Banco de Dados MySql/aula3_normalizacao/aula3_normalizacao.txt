@@ -1,0 +1,41 @@
+aula3 - normalização
+
+semantica clara - evite contrações
+
+corre de redundancias
+
+se pegou o negocio andando, siga como está
+
+chaves estrangeiras são acordadas no início do projeto
+
+cuidar as questões de contexto - exemplo coluna de "NomeDepartamento" numa tabela de "funcionarios"
+
+evitar tuplas nulas - questão de performance nos selects - questão de espaço em disco tbm - 
+
+- Primeira Forma Normal (1FN)
+
+Cada tupla contém exatamente um valor para cada atributo
+Os atributos devem ser atômicos e indivisíveis
+Atributos compostos e multivalorados devem ser representados por novas linhas ou tabelas
+
+- Segunda Forma Normal (2FN)
+
+Conceito baseado em dependência funcional total
+
+Não posso ter relações parciais na tabela
+
+- Terceira Forma Normal (3FN)
+
+Conceito baseado em dependencia transitiva
+	dependencia transitiva ocorre quando um atributo além de depender da chave primária depende de outro atributo não chave
+
+Não devemos ter colunas calculadas que sejam derivadas de algum cálculo sobre outras colunas
+
+https://pt.stackoverflow.com/a/151394 - as outras formas normais
+
+https://www.w3schools.com/sql/default.asp - tutoriais
+
+
+
+
+

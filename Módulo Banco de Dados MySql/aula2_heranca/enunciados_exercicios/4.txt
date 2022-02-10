@@ -1,0 +1,7 @@
+Uma empresa de transportes possui uma frota de ônibus. Cada ônibus possui uma placa e um número de chassi que são únicos. Além disso, cada ônibus possui uma capacidade de passageiros e um ano de fabricação.
+
+Os empregados possuem uma única função na empresa que pode ser motorista, mecânico, cobrador ou funcionário administrativo. Todos os funcionários possuem um número de CPF e de CTPS únicos e um nome.
+
+Os mecânicos possuem um número de armário, onde são guardadas as suas ferramentas. Os motoristas possuem um número de CNH, além de sua categoria, data de obtenção e de validade. Os cobradores possuem um número de viagens realizadas no mês e o montante acumulado com a venda das passagens. Os funcionários administrativos possuem um código bancário que os identifica junto ao banco para movimentação financeira.
+
+A empresa realiza uma série de viagens por dia. Um motorista e um cobrador são associados a cada viagem, que deve ter uma data, horário, cidade de partida e cidade de destino e número de passageiros transportados. A cada viagem um mecânico é responsável pela liberação do ônibus da garagem.
