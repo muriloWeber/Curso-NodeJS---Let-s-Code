@@ -1,0 +1,9 @@
+aula - 10/02
+
+https://github.com/menezee/818-linx
+
+https://docs.npmjs.com/try-the-latest-stable-version-of-npm
+
+https://www.npmjs.com/package/ascii-art
+
+https://github.com/menezee/818-linx/tree/main/src/intro-10-02-2022
