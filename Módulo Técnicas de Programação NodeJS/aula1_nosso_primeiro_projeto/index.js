@@ -21,8 +21,8 @@ console.log('--------------\n\nTerminal interativo:\n');
 // criamos uma instância do readline usando como input/output o stdin,
 // o terminal onde vai rodar o nodejs
 const rl = readline.createInterface({
-  input: process.stdin,
-  output: process.stdout,
+    input: process.stdin,
+    output: process.stdout,
 });
 
 rl.question('Qual idade verificar?\n', (age) => {
