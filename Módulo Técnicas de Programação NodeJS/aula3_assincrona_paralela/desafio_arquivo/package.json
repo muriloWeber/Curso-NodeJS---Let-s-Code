@@ -1,0 +1,12 @@
+{
+  "name": "desafio_arquivo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "exer_casa_fileSystem.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node exer_casa_fileSystem.js"
+  },
+  "author": "Murilo Weber",
+  "license": "ISC"
+}
