@@ -38,3 +38,9 @@ https://nodejs.org/api/fs.html#file-system-flags
 
 fica com uma cara tipo:
 fs.writeFileSync(filePathToWrite, content, { flag: 'a' });
+
+aula 4 - 22/02
+
+códigos async e paralell
+https://github.com/menezee/818-linx/blob/main/classes/async.mdx
+
