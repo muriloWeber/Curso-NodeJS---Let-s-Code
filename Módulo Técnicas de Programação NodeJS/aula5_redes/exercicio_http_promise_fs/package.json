@@ -1,0 +1,15 @@
+{
+  "name": "exercicio_http_promise_fs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "3_endpoints_3_tipos_dados.js",
+  "scripts": {
+    "dev": "nodemon 3_endpoints_3_tipos_dados.js",
+    "dev2": "nodemon index_3_arquivos.js"
+  },
+  "author": "'Murilo Weber'",
+  "license": "ISC",
+  "dependencies": {
+    "node-gtts": "^2.0.2"
+  }
+}

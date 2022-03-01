@@ -1,12 +1,11 @@
 {
-  "dependencies": {
-    "nodemon": "^2.0.15"
-  },
   "name": "aula5_redes",
   "version": "1.0.0",
   "description": "\"api rest/http\"",
   "main": "index.js",
-  "devDependencies": {},
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
   "scripts": {
     "dev": "nodemon index.js"
   },
