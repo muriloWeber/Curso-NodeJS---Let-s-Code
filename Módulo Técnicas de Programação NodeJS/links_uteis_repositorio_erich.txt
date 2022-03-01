@@ -44,3 +44,19 @@ aula 4 - 22/02
 códigos async e paralell
 https://github.com/menezee/818-linx/blob/main/classes/async.mdx
 
+baixar - postman para simular POST http
+https://www.postman.com/
+
+api do pokemom
+https://pokeapi.co/api/v2/pokemon/1
+
+nodemom - pra restartar o servidor cada vez que alterar - npm -D nodemon (somente para desenvolvimento) npm -g nodemon (global)
+no package.json nos scripts "dev": "nodemon index.js" - pra chamar direto npx nodemon nomeDoArquivo
+https://www.npmjs.com/package/nodemon
+
+documentação envio de dados
+https://nodejs.dev/learn/making-http-requests-with-nodejs
+https://nodejs.dev/learn/get-http-request-body-data-using-nodejs
+
+
+
