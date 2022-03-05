@@ -34,7 +34,7 @@ async function writeTxtFile(content) {
     const fileName = `newBeer(${content}).txt`
     await fsPromise.writeFile(fileName, content);
     return {
-      control: `${new Date().toISOString()}-newBeer(${content}).txt`,
+      control: `${new Date().toISOString()}-${fileName}`,
       fileName: fileName,
       content,
     };
