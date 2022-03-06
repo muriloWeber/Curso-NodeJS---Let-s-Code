@@ -30,9 +30,12 @@ function getBodyFunction(req) {
 
 
 
-async function writeTxtFile(content) {
-    const fileName = `newBeer(${content}).txt`
-    await fsPromise.writeFile(fileName, content);
+function writeTxtFile(content) {
+    const fileName = `newBeer(${content}).txt`;
+    const filePath = path.join(__dirname, fileName)
+    fsPromise.writeFile(filePath, content, 'utf-8')
+        .then(() => console.log('arquivo criado'))
+        .catch(console.err);
     return {
       control: `${new Date().toISOString()}-${fileName}`,
       fileName: fileName,
