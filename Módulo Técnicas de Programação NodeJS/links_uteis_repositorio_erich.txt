@@ -63,5 +63,13 @@ Network pt2
 https://github.com/menezee/818-linx/blob/main/src/network-24-02-2022/routes/beer-router.js#L26
 https://github.com/menezee/818-linx/blob/ab4cd2c758c1bb3ea129241b3a83737e0901a51f/src/network-24-02-2022/helpers.js#L53
 
+Como fazer requests
+https://nodejs.dev/learn/making-http-requests-with-nodejs
 
+npm i dotenv
+npm i luxon
+
+npmjs.com
+
+https://moment.github.io/luxon/#/tour
 
