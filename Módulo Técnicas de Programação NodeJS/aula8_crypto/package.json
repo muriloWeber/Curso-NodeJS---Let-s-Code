@@ -1,0 +1,13 @@
+{
+  "dependencies": {
+    "aes256": "^1.1.0",
+    "body-parser": "^1.19.2",
+    "express": "^4.17.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "scripts": {
+    "dev": "nodemon index_express.js"
+  }
+}

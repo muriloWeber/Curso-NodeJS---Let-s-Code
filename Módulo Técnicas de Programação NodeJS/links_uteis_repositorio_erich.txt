@@ -73,3 +73,32 @@ npmjs.com
 
 https://moment.github.io/luxon/#/tour
 
+aula de crypto
+
+npm i aes256
+
+https://www.npmjs.com/package/aes256
+
+SLSNLsMKtcBRhq2Ppyu4TYDxtVk2nZ4hQq7CMsRFbMamJQSGK4NBwA==
+
+Testes de API
+
+https://www.npmjs.com/package/supertest
+
+npm i express
+npm i body-parser
+npm i -D nodemon
+npm set-script dev "nodemon index.js"
+npm run dev
+
+curso recomendado 
+https://www.youtube.com/watch?v=W2ld5xRS3cY&list=PLz_YTBuxtxt6_Zf1h-qzNsvVt46H8ziKh
+
+Cria projeto Express diretasso
+npx express-generator
+
+Axios
+
+npm i axios
+
+Pesquisar consulta em banco lib (knex)
